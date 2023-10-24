@@ -23,7 +23,8 @@ const router = createBrowserRouter([
       {path: '/skill', element: <Myskills />},
       {path: '/experience', element: <Myexperience />},
       {path: '/work-project', element: <Myproject />},
-      {path: '/education', element: <Myeducation />}
+      {path: '/education', element: <Myeducation />},
+      {path: '*', element: <HomePage />}
      ],
 },
   
