@@ -1,6 +1,7 @@
 import { 
   createBrowserRouter, 
-  RouterProvider
+  RouterProvider,
+  createHashRouter 
  } 
  from "react-router-dom";
 
@@ -13,7 +14,7 @@ import Myeducation from './pages/MyEducations';
 import Myexperience from './pages/MyExperiences';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
      element: <RootLayout />,
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
 },
   
 ]);
-
+//
 
 function App() {
  
