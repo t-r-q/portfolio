@@ -1,7 +1,7 @@
 import { 
   createBrowserRouter, 
   RouterProvider,
-  createHashRouter 
+  BrowserRouter, createHashRouter 
  } 
  from "react-router-dom";
 
@@ -20,11 +20,11 @@ const router = createHashRouter([
      element: <RootLayout />,
      children:[
       {path: '/', element: <HomePage />},
-      {path: '/portfolio/#/aboutme', element: <Aboutme />},
-      {path: '/portfolio/#/skill', element: <Myskills />},
-      {path: '/portfolio/#/experience', element: <Myexperience />},
-      {path: '/portfolio/#/work-project', element: <Myproject />},
-      {path: '/portfolio/#/education', element: <Myeducation />},
+      {path: '/aboutme', element: <Aboutme />},
+      {path: '/skill', element: <Myskills />},
+      {path: '/experience', element: <Myexperience />},
+      {path: '/work-project', element: <Myproject />},
+      {path: '/education', element: <Myeducation />},
       {path: '*', element: <HomePage />}
      ],
 },
